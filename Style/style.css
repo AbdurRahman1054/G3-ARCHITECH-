@@ -160,6 +160,69 @@ main {
   font-weight: 400;
   color: #727272;
 }
+.btn_enjoy {
+  border-radius: 8px;
+  background: rgb(255, 144, 14);
+  padding: 46px 42px;
+  border: none;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
+  position: absolute;
+  margin-top: 860px;
+  margin-left: -780px;
+  /* max-width: 342px; */
+}
+.enjoy_btn_first_latter {
+  font-size: 3.063rem;
+  font-weight: 700;
+}
+.enjoy_btn_second_latter {
+  font-size: 1.563rem;
+  font-weight: 500;
+}
+.enjoy_img_container {
+  position: relative;
+}
+
+/* Some Facts section  */
+.facts_cart {
+  margin-top: 50px;
+  text-align: center;
+  gap: 124.17px;
+  /* max-width: 1300px; */
+  /* margin: 0 auto; */
+  justify-content: center;
+  align-items: center;
+}
+.cart {
+  line-height: 5px;
+  border: 1px solid rgb(255, 144, 14);
+  border-radius: 8px;
+  padding: 50px 36px;
+  max-width: 241px;
+}
+.cart > img {
+  max-width: 45.22px;
+}
+.cart > h3 {
+  font-size: 2.813rem;
+  font-weight: 600;
+}
+.cart > p {
+  font-size: 1.25rem;
+  font: 600;
+  color: #727272;
+}
+.facts_title {
+  font-size: 2.813rem;
+  font-weight: 700;
+}
+.facts_description {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
 /* Media QUARY */
 @media screen and (max-width: 576px) {
   main > section {
@@ -168,7 +231,8 @@ main {
   .navbar,
   .nav-link,
   .teams,
-  .enjoy {
+  .enjoy,
+  .facts_cart {
     flex-direction: column;
   }
   .team_img_container {
@@ -179,13 +243,31 @@ main {
   }
   .enjoy {
     flex-direction: column-reverse;
+    row-gap: 40px;
+  }
+  .btn_enjoy {
+    margin: 0 auto;
+    position: static;
+    margin-top: 30px;
+  }
+  .enjoy_img_container {
+    display: flex;
+    flex-direction: column;
+  }
+  .enjoy_content {
+    /* margin-bottom: 400px; */
+    /* row-gap: -300px; */
+  }
+  .facts_cart {
+    gap: 25px;
   }
 }
 
 /* RESPONSIVE MEDIUM DEVICE */
 @media screen and (min-width: 576px) and (max-width: 992px) {
   .teams,
-  .enjoy {
+  .enjoy,
+  .facts_cart {
     flex-direction: column;
   }
   .our_fetures {
@@ -193,5 +275,8 @@ main {
   }
   .enjoy {
     flex-direction: column-reverse;
+  }
+  .facts_cart {
+    gap: 25px;
   }
 }
