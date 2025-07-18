@@ -118,6 +118,48 @@ main {
   font-size: 1rem;
 }
 
+/* Features you will love & enjoy */
+.enjoy {
+  align-items: center;
+  gap: 146px;
+}
+.enjoy_img {
+  width: 100%;
+}
+.enjoy_content {
+  max-width: 586px;
+}
+.enjoy_heading {
+  font-size: 2.813rem;
+  font-weight: 700;
+  border-left: 5px solid #ff900e;
+  padding-left: 21px;
+}
+.enjoy_description {
+  font-weight: 400;
+  font-size: 1rem;
+}
+.enjoy_cart {
+  border-radius: 8px;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  background: rgb(255, 255, 255);
+  /* margin-top: 20px; */
+  padding: 30px;
+  max-width: 586px;
+  max-height: 171px;
+  margin-bottom: 20px;
+  /* box-shadow: X: 0 Y: 4 Blur: 30 Extend: 0; */
+}
+.enjoy_cart_title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #131313;
+}
+.enjoy_cart_description {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #727272;
+}
 /* Media QUARY */
 @media screen and (max-width: 576px) {
   main > section {
@@ -125,7 +167,8 @@ main {
   }
   .navbar,
   .nav-link,
-  .teams {
+  .teams,
+  .enjoy {
     flex-direction: column;
   }
   .team_img_container {
@@ -134,14 +177,21 @@ main {
   .our_fetures {
     margin-left: 20px;
   }
+  .enjoy {
+    flex-direction: column-reverse;
+  }
 }
 
 /* RESPONSIVE MEDIUM DEVICE */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-  .teams {
+  .teams,
+  .enjoy {
     flex-direction: column;
   }
   .our_fetures {
     margin: 0 auto;
+  }
+  .enjoy {
+    flex-direction: column-reverse;
   }
 }
