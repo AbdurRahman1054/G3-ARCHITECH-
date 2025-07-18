@@ -10,20 +10,82 @@
 .display-flex {
   display: flex;
 }
+.dark_1 {
+  color: #131313;
+}
+.dark_2 {
+  color: #424242;
+}
+.dark_3 {
+  color: #727272;
+}
+.btn_primary {
+  border-radius: 8px;
+  background: rgb(255, 144, 14);
+  padding: 21px 24px;
+  border: none;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
 
 /* HEADER STYLE */
 
 /* NAVBAR STYLE */
 .navbar {
   justify-content: space-between;
+  align-items: center;
 }
-
+.brand {
+  font-size: 2.813rem;
+  font-weight: 700;
+}
 .nav-link {
   /* text-decoration: none; */
   list-style: none;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  color: #424242;
 }
 .nav-item {
-  /* text-decoration: none; */
   margin-right: 20px;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+.nav-item > a {
+  text-decoration: none;
+  /* color: gray; */
+  color: #424242;
+}
+.bg {
+  background: rgba(255, 144, 14, 0.1);
+}
+.navbar,
+.banner {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+/* Banner Related Style */
+.banner_content {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.banner_title {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.banner_description {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.banner_img {
+  width: 100%;
+}
+/* Media QUARY */
+@media screen and (max-width: 576px) {
+  .navbar,
+  .nav-link {
+    flex-direction: column;
+  }
 }
